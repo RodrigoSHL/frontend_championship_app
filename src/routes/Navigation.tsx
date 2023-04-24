@@ -8,6 +8,7 @@ import Crud from "../components/Crud/Crud";
 import Pokeapi from "../components/Pokeapi/Pokeapi";
 import TestComponent from "../components/TestComponent/TestComponent";
 import { useAuthStore } from "../hooks/useAuthStore";
+import ScorersTable from "../components/ScorersTable/ScorersTable";
 
 const Navigation = () => {
   const { status, checkAuthToken } = useAuthStore();
@@ -28,6 +29,7 @@ const Navigation = () => {
           <>
             <Route path="/calendar" element={<CalendarPublic />} />
             <Route path="/calendar/:id" element={<CalendarPublic />} />
+            <Route path="/scorers" element={<ScorersTable />} />
             <Route path="/login" element={<Login />} />
             <Route path="/*" element={<Navigate to="/calendar" />} />
           </>

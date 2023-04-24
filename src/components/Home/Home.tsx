@@ -28,7 +28,7 @@ import CalendarIcon from "@mui/icons-material/CalendarMonth";
 import Snackbar from "../Middleware/Snackbar";
 import { useAuthStore } from "../../hooks/useAuthStore";
 
-const drawerWidth = 240;
+const drawerWidth = 350;
 
 const openedMixin = (theme: Theme): CSSObject => ({
   width: drawerWidth,
@@ -155,6 +155,11 @@ export default function MiniDrawer() {
       text: "Cancel Time",
       icon: <CalendarIcon />,
       onClick: () => navigate("/cancel"),
+    },
+    {
+      text: "TABLA DE GOLEADORES",
+      icon: <CalendarIcon />,
+      onClick: () => navigate("/scorers"),
     },
   ];
 
