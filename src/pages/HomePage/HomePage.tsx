@@ -1,6 +1,5 @@
 import { Box, Container, Paper, Grid } from "@mui/material";
-import Scorers from "./Scorers";
-import styles from "./ScorersTable.module.css";
+import styles from "../Pages.module.css";
 import Chilenitos from "../../assets/shield/chilenitos.png";
 import Orompello from "../../assets/shield/orompello.png";
 import Berlin from "../../assets/shield/villaberlin.png";
@@ -18,22 +17,17 @@ const rowTables: ScorersRowTable[] = [
   { shield: Berlin, team: "Villa Berlín", name: "Benjamin Correa", goals: 3 },
 ];
 
-const ScorersTable = () => {
+const HomePage = () => {
   return (
     <>
-      <Container maxWidth="lg">
+      <Container>
         <Box className={styles.container}>
           <Box component="main" className={styles.containerTable}>
-            <Paper>
+            <>
               <Grid container spacing={2}>
-                <Grid item xs={6}>
-                  <Scorers ligue={"Honor"} table={rowTables} />
-                </Grid>
-                <Grid item xs={6}>
-                  <Scorers ligue={"Honor"} table={rowTables} />
-                </Grid>
+               HOLO
               </Grid>
-            </Paper>
+            </>
           </Box>
         </Box>
       </Container>
@@ -41,4 +35,4 @@ const ScorersTable = () => {
   );
 };
 
-export default ScorersTable;
+export default HomePage;

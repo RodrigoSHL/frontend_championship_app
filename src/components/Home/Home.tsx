@@ -152,14 +152,19 @@ export default function MiniDrawer() {
 
   const itemsExternalUserList = [
     {
-      text: "Cancel Time",
+      text: "INICIO",
       icon: <CalendarIcon />,
-      onClick: () => navigate("/cancel"),
+      onClick: () => navigate("/home"),
     },
     {
       text: "TABLA DE GOLEADORES",
       icon: <CalendarIcon />,
       onClick: () => navigate("/scorers"),
+    },
+    {
+      text: "Cancel Time",
+      icon: <CalendarIcon />,
+      onClick: () => navigate("/cancel"),
     },
   ];
 
