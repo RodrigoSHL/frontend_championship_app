@@ -3,6 +3,7 @@ import styles from "../Pages.module.css";
 import Chilenitos from "../../assets/shield/chilenitos.png";
 import Orompello from "../../assets/shield/orompello.png";
 import Berlin from "../../assets/shield/villaberlin.png";
+import styles_page from "./HomePage.module.css";
 
 interface ScorersRowTable {
   shield: string;
@@ -20,14 +21,23 @@ const rowTables: ScorersRowTable[] = [
 const HomePage = () => {
   return (
     <>
-      <Container>
+      <Container fixed>
         <Box className={styles.container}>
-          <Box component="main" className={styles.containerTable}>
-            <>
-              <Grid container spacing={2}>
-               HOLO
+          <Box className={styles_page.containerTable}>
+            <Box className={styles_page.full}></Box>
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <Box className={styles.sectionTitle}>
+                  <></>
+                </Box>
               </Grid>
-            </>
+              <Grid className={styles.sectionNews} item xs={6}>
+                
+              </Grid>
+              <Grid className={styles.sectionNews} item xs={6}>
+                
+              </Grid>
+            </Grid>
           </Box>
         </Box>
       </Container>

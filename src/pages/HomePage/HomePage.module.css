@@ -1,4 +1,17 @@
-.shield {
-  max-width: 30px;
-  max-height: 30px;
+.containerTable {
+  flex: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.full {
+  background-image: url('https://okdiario.com/img/2019/08/10/origen-del-futbol.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-position: top center;
 }

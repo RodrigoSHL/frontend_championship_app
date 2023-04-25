@@ -7,4 +7,13 @@
   flex-grow: 1;
   padding: 3;
 }
-  
+
+.sectionTitle {
+  height: 70px;
+  background-color: aqua;
+}
+
+.sectionNews {
+  height: 600px;
+  background-color: orange;
+}
