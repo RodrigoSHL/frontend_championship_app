@@ -13,17 +13,15 @@ import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import Navigation from "../../routes/Navigation";
 import Snackbar from "../Middleware/Snackbar";
 import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "../../hooks/useAuthStore";
 
-const drawerWidth = 240;
+const drawerWidth = 350;
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })<{
   open?: boolean;
@@ -135,6 +133,11 @@ export default function PersistentDrawerLeft() {
       text: "TABLA DE GOLEADORES",
       icon: <InboxIcon />,
       onClick: () => navigate("/scorers"),
+    },
+    {
+      text: "NOTICIAS",
+      icon: <InboxIcon />,
+      onClick: () => navigate("/news"),
     },
     {
       text: "Cancel Time",

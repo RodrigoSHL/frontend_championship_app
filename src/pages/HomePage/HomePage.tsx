@@ -1,41 +1,22 @@
-import { Box, Container, Paper, Grid } from "@mui/material";
-import styles from "../Pages.module.css";
-import Chilenitos from "../../assets/shield/chilenitos.png";
-import Orompello from "../../assets/shield/orompello.png";
-import Berlin from "../../assets/shield/villaberlin.png";
-import styles_page from "./HomePage.module.css";
-
-interface ScorersRowTable {
-  shield: string;
-  team: string;
-  name: string;
-  goals: number;
-}
-
-const rowTables: ScorersRowTable[] = [
-  { shield: Chilenitos, team: "Chilenitos", name: "Alfonso Urbina", goals: 3 },
-  { shield: Orompello, team: "Orompello", name: "Mauricio Ortiz", goals: 3 },
-  { shield: Berlin, team: "Villa Berlín", name: "Benjamin Correa", goals: 3 },
-];
+import { Box, Container, Grid } from "@mui/material";
+import styles_core from "../Pages.module.css";
+import styles from "./HomePage.module.css";
+import NewCard from "../News/NewCard";
 
 const HomePage = () => {
   return (
     <>
-      <Container fixed>
-        <Box className={styles.container}>
-          <Box className={styles_page.containerTable}>
-            <Box className={styles_page.full}></Box>
+      <Container>
+        <Box className={styles_core.container}>
+          <Box className={styles.containerTable}>
+            <Box className={styles.full}></Box>
             <Grid container spacing={2}>
               <Grid item xs={12}>
-                <Box className={styles.sectionTitle}>
-                  <></>
-                </Box>
+                <Box className={styles.sectionTitle}></Box>
               </Grid>
-              <Grid className={styles.sectionNews} item xs={6}>
-                
-              </Grid>
-              <Grid className={styles.sectionNews} item xs={6}>
-                
+              <Grid className={styles.sectionNew} item xs={6}></Grid>
+              <Grid className={styles.sectionPhotosNew} item xs={6}>
+                <NewCard />
               </Grid>
             </Grid>
           </Box>

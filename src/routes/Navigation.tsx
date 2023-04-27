@@ -10,6 +10,7 @@ import TestComponent from "../components/TestComponent/TestComponent";
 import { useAuthStore } from "../hooks/useAuthStore";
 import ScorersTablePage from "../pages/ScorersTablePage/ScorersTable";
 import HomePage from "../pages/HomePage/HomePage";
+import IndexNewsPage from "../pages/News/Index";
 
 const Navigation = () => {
   const { status, checkAuthToken } = useAuthStore();
@@ -30,6 +31,7 @@ const Navigation = () => {
           <>
             <Route path="/home" element={<HomePage />} />
             <Route path="/scorers" element={<ScorersTablePage />} />
+            <Route path="/news" element={<IndexNewsPage />} />
 
             <Route path="/calendar" element={<CalendarPublic />} />
             <Route path="/calendar/:id" element={<CalendarPublic />} />

@@ -1,5 +1,4 @@
 .containerTable {
-  flex: 1;
   position: absolute;
   top: 0;
   left: 0;
@@ -11,7 +10,23 @@
 
 .full {
   background-image: url('https://okdiario.com/img/2019/08/10/origen-del-futbol.jpg');
+  background-color: aqua;
   background-size: cover;
   height: 100vh;
   background-position: top center;
+}
+
+.sectionTitle {
+  height: 70px;
+  background-color: aqua;
+}
+
+.sectionNew {
+  height: 600px;
+  background-color: orange;
+}
+
+.sectionPhotosNew {
+  height: 600px;
+  background-color: greenyellow;
 }

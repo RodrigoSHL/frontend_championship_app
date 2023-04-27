@@ -1,6 +1,8 @@
 .container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: 'center';
 }
 
 .containerTable {
@@ -8,12 +10,3 @@
   padding: 3;
 }
 
-.sectionTitle {
-  height: 70px;
-  background-color: aqua;
-}
-
-.sectionNews {
-  height: 600px;
-  background-color: orange;
-}
