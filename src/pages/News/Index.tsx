@@ -26,16 +26,19 @@ const images = [
   },
   {
     id: 3,
-    src: "https://picsum.photos/id/1020/400/400",
+    src: "https://okdiario.com/img/2019/08/10/origen-del-futbol.jpg",
   },
 ];
 const IndexNewsPage = () => {
   return (
     <>
       <Box className={styles.container}>
-         <NewCard/>
-         <ImageGallery images={images}/>
-
+        <Box sx={{ flex: 1 }}>
+          <NewCard />
+        </Box>
+        <Box sx={{ flex: 1}}>
+          <ImageGallery images={images} />
+        </Box>
       </Box>
     </>
   );

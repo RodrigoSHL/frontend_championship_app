@@ -9,7 +9,7 @@ import Pokeapi from "../components/Pokeapi/Pokeapi";
 import TestComponent from "../components/TestComponent/TestComponent";
 import { useAuthStore } from "../hooks/useAuthStore";
 import ScorersTablePage from "../pages/ScorersTablePage/ScorersTable";
-import HomePage from "../pages/HomePage/HomePage";
+import IndexHomePage from "../pages/HomePage/Index";
 import IndexNewsPage from "../pages/News/Index";
 
 const Navigation = () => {
@@ -29,7 +29,7 @@ const Navigation = () => {
       <Routes>
         {status === "not-authenticated" ? (
           <>
-            <Route path="/home" element={<HomePage />} />
+            <Route path="/home" element={<IndexHomePage />} />
             <Route path="/scorers" element={<ScorersTablePage />} />
             <Route path="/news" element={<IndexNewsPage />} />
 
