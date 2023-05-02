@@ -20,6 +20,7 @@ import Navigation from "../../routes/Navigation";
 import Snackbar from "../Middleware/Snackbar";
 import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "../../hooks/useAuthStore";
+import Footer from "../Footer/Footer";
 
 const drawerWidth = 350;
 
@@ -140,7 +141,12 @@ export default function PersistentDrawerLeft() {
       onClick: () => navigate("/news"),
     },
     {
-      text: "Cancel Time",
+      text: "FOOTER",
+      icon: <InboxIcon />,
+      onClick: () => navigate("/footer"),
+    },
+    {
+      text: "CALENDAR",
       icon: <InboxIcon />,
       onClick: () => navigate("/cancel"),
     },
@@ -232,6 +238,8 @@ export default function PersistentDrawerLeft() {
         <DrawerHeader />
         <Navigation />
         <Snackbar />
+        <Footer/>
+
       </Main>
     </Box>
   );

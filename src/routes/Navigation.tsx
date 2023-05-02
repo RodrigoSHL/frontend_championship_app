@@ -11,6 +11,7 @@ import { useAuthStore } from "../hooks/useAuthStore";
 import ScorersTablePage from "../pages/ScorersTablePage/ScorersTable";
 import IndexHomePage from "../pages/HomePage/Index";
 import IndexNewsPage from "../pages/News/Index";
+import Footer from "../components/Footer/Footer";
 
 const Navigation = () => {
   const { status, checkAuthToken } = useAuthStore();
@@ -32,6 +33,7 @@ const Navigation = () => {
             <Route path="/home" element={<IndexHomePage />} />
             <Route path="/scorers" element={<ScorersTablePage />} />
             <Route path="/news" element={<IndexNewsPage />} />
+            <Route path="/footer" element={<Footer />} />
 
             <Route path="/calendar" element={<CalendarPublic />} />
             <Route path="/calendar/:id" element={<CalendarPublic />} />

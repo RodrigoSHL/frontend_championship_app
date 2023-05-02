@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.containerShield {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px
+}
+
+.shield {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0px 30px;
+}
