@@ -12,6 +12,7 @@ import ScorersTablePage from "../pages/ScorersTablePage/ScorersTable";
 import IndexHomePage from "../pages/HomePage/Index";
 import IndexNewsPage from "../pages/News/Index";
 import Footer from "../components/Footer/Footer";
+import IndexContactPage from "../pages/ContactPage/Index";
 
 const Navigation = () => {
   const { status, checkAuthToken } = useAuthStore();
@@ -33,12 +34,12 @@ const Navigation = () => {
             <Route path="/home" element={<IndexHomePage />} />
             <Route path="/scorers" element={<ScorersTablePage />} />
             <Route path="/news" element={<IndexNewsPage />} />
-            <Route path="/footer" element={<Footer />} />
+            <Route path="/contact" element={<IndexContactPage />} />
 
             <Route path="/calendar" element={<CalendarPublic />} />
             <Route path="/calendar/:id" element={<CalendarPublic />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/*" element={<Navigate to="/calendar" />} />
+            <Route path="/*" element={<Navigate to="/home" />} />
           </>
         ) : (
           <>

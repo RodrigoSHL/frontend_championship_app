@@ -141,9 +141,9 @@ export default function PersistentDrawerLeft() {
       onClick: () => navigate("/news"),
     },
     {
-      text: "FOOTER",
+      text: "CONTACTO",
       icon: <InboxIcon />,
-      onClick: () => navigate("/footer"),
+      onClick: () => navigate("/contact"),
     },
     {
       text: "CALENDAR",

@@ -37,11 +37,7 @@ const arrShield = [
   {
     shield: Orompello,
     name: "Orompello",
-  },
-  {
-    shield: Berlin,
-    name: "Villa Berlín",
-  },
+  }
 ];
 
 export const Footer: FC = (): ReactElement => {
@@ -53,9 +49,10 @@ export const Footer: FC = (): ReactElement => {
         backgroundColor: "primary.main",
         paddingTop: "1rem",
         paddingBottom: "1rem",
+        marginTop: "2rem"
       }}
     >
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" >
         <Grid container direction="column" alignItems="center">
           <Grid item xs={12}>
             <Typography color="white" variant="h5" sx={{ margin: 3}}>
