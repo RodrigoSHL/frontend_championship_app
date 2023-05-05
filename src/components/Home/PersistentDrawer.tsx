@@ -223,13 +223,7 @@ export default function PersistentDrawerLeft() {
             </List>
           )
         ) : (
-          <List
-            subheader={
-              <ListSubheader component="div">
-                Bienvenido
-              </ListSubheader>
-            }
-          >
+          <List>
             {itemsExternalUserList.map((item, index) => {
               const { text, icon, onClick } = item;
               return (

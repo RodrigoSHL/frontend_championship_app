@@ -25,8 +25,8 @@ export default function NewCard({news}: Props) {
         <Typography gutterBottom variant="overline" component="div">
           {news.date}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {news.description}
+        <Typography align="justify" variant="body2" color="text.secondary">
+          {news.description.substring(0,280) + '...'}
         </Typography>
       </CardContent>
       <CardActions>

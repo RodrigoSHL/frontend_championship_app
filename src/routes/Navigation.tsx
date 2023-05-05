@@ -10,7 +10,7 @@ import TestComponent from "../components/TestComponent/TestComponent";
 import { useAuthStore } from "../hooks/useAuthStore";
 import ScorersTablePage from "../pages/ScorersTablePage/ScorersTable";
 import IndexHomePage from "../pages/HomePage/Index";
-import IndexNewsPage from "../pages/News/Index";
+import IndexNewsPage from "../pages/NewsPage/Index";
 import IndexContactPage from "../pages/ContactPage/Index";
 import IndexMediaPage from "../pages/MediaPage/Index";
 
