@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { TextField, TextareaAutosize, Button } from "@mui/material";
+import { TextField, Button } from "@mui/material";
+import styles from "./ContactPage.module.css";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -15,7 +16,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className={styles.containerMargin} onSubmit={handleSubmit}>
       <TextField
         label="Nombre"
         value={name}
@@ -39,14 +40,17 @@ const ContactForm = () => {
         fullWidth
         margin="normal"
       />
-      <TextareaAutosize
-        placeholder="Mensaje"
+      <TextField
+        label="Mensaje"
+        type="text"
         value={message}
         onChange={(event) => setMessage(event.target.value)}
-        minRows={3}
-
+        fullWidth
+        margin="normal"
       />
-      <Button type="submit" variant="contained">
+      <br/><br/>
+
+      <Button fullWidth type="submit" variant="contained">
         Enviar
       </Button>
     </form>

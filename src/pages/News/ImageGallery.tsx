@@ -1,18 +1,6 @@
 import * as React from "react";
-import { makeStyles } from "@mui/styles";
 import { Grid, GridSpacing, Theme } from "@mui/material";
 import styles from "./NewsPage.module.css";
-
-const useStyles = makeStyles((theme: Theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  image: {
-    width: "100%",
-    height: "100%",
-    objectFit: "cover",
-  },
-}));
 
 interface Image {
   id: number;
@@ -25,13 +13,12 @@ interface Props {
 }
 
 export const ImageGallery: React.FC<Props> = ({ images, spacing = 2 }) => {
-  const classes = useStyles();
 
   return (
     <Grid container spacing={spacing} className={styles.img_container}>
       {images.map((image) => (
-        <Grid key={image.id} item xs={12} sm={6} md={4} lg={3}>
-          <img className={classes.image} src={image.src} alt="" />
+        <Grid className={styles.root} key={image.id} item xs={12} sm={6} md={4} lg={3}>
+          <img className={styles.image} src={image.src} alt="" />
         </Grid>
       ))}
     </Grid>

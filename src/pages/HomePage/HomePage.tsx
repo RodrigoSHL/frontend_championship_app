@@ -1,6 +1,5 @@
-import { Box, Container, Grid } from "@mui/material";
+import { Box } from "@mui/material";
 import styles from "./HomePage.module.css";
-import NewCard from "../News/NewCard";
 
 const HomePage = () => {
   return (

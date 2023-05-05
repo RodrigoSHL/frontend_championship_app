@@ -26,10 +26,10 @@ const ScorersTablePage = () => {
           <Box component="main" className={styles.containerTable}>
             <>
               <Grid container spacing={2}>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6}>
                   <Scorers ligue={"Honor"} table={rowTables} />
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6}>
                   <Scorers ligue={"Honor"} table={rowTables} />
                 </Grid>
               </Grid>

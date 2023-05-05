@@ -145,11 +145,6 @@ export default function PersistentDrawerLeft() {
       icon: <InboxIcon />,
       onClick: () => navigate("/contact"),
     },
-    {
-      text: "CALENDAR",
-      icon: <InboxIcon />,
-      onClick: () => navigate("/cancel"),
-    },
   ];
 
   return (
@@ -238,8 +233,7 @@ export default function PersistentDrawerLeft() {
         <DrawerHeader />
         <Navigation />
         <Snackbar />
-        <Footer/>
-
+        <Footer />
       </Main>
     </Box>
   );

@@ -5,26 +5,28 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { News } from "../../interfaces/INews.interface";
 
-export default function NewCard() {
+interface Props {
+  news: News;
+}
+export default function NewCard({news}: Props) {
   return (
-    <Card sx={{ width: "auto", margin: "24px" }}>
+    <Card sx={{ maxWidth: 345, margin:2 }}>
       <CardMedia
-        sx={{ height: "auto" }}
-        image="/static/images/cards/contemplative-reptile.jpg"
+        sx={{ height: 140 }}
         title="green iguana"
+        image={news.images[0].src}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          {news.title}
+        </Typography>
+        <Typography gutterBottom variant="overline" component="div">
+          {news.date}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Saludamos a Jaime Zapata Rodríguez, entrenador de las selecciones Sub
-          15 y Sub 45 de la Asociación de Fútbol Valparaíso, quién fue premiado
-          el sábado por el Club de Deportes Everton por ser estar considerado
-          entre los jugadores más destacados de esta prestigiosa institución. Un
-          saludo y abrazo para nuestro profesor por su destacada trayectoria en
-          el fútbol profesional chileno.
+          {news.description}
         </Typography>
       </CardContent>
       <CardActions>
