@@ -54,8 +54,7 @@ const IndexNewsPage = () => {
             <NewCard news={news}/> 
             <NewCard news={news}/> 
             <NewCard news={news}/> 
-            <NewCard news={news}/> 
-
+            <NewCard news={news}/>
           </Grid>
         </Grid>
       </Container>

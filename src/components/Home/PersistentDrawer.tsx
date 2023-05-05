@@ -21,6 +21,8 @@ import Snackbar from "../Middleware/Snackbar";
 import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "../../hooks/useAuthStore";
 import Footer from "../Footer/Footer";
+import NestedList from "./NestedList";
+import { ListSubheader } from "@mui/material";
 
 const drawerWidth = 350;
 
@@ -136,6 +138,11 @@ export default function PersistentDrawerLeft() {
       onClick: () => navigate("/scorers"),
     },
     {
+      text: "MEDIA",
+      icon: <InboxIcon />,
+      onClick: () => navigate("/media"),
+    },
+    {
       text: "NOTICIAS",
       icon: <InboxIcon />,
       onClick: () => navigate("/news"),
@@ -216,7 +223,13 @@ export default function PersistentDrawerLeft() {
             </List>
           )
         ) : (
-          <List>
+          <List
+            subheader={
+              <ListSubheader component="div">
+                Bienvenido
+              </ListSubheader>
+            }
+          >
             {itemsExternalUserList.map((item, index) => {
               const { text, icon, onClick } = item;
               return (
@@ -226,6 +239,7 @@ export default function PersistentDrawerLeft() {
                 </ListItem>
               );
             })}
+            <NestedList />
           </List>
         )}
       </Drawer>

@@ -1,42 +1,52 @@
 import React, { FC, ReactElement } from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import styles from "./Footer.module.css";
-import Chilenitos from "../../assets/shield/chilenitos.png";
 import Orompello from "../../assets/shield/orompello.png";
-import Berlin from "../../assets/shield/villaberlin.png";
+import SanPedro from "../../assets/shield/sanpedro.png";
+import SanFrancisco from "../../assets/shield/sanfrancisco.png";
+import DeportesRecreo from "../../assets/shield/deportesrecreo.png";
+import Chilenitos from "../../assets/shield/chilenitos.png";
+import LosPlaceres from "../../assets/shield/placeres.png";
+import America from "../../assets/shield/america.png";
+import VillaBerlin from "../../assets/shield/villaberlin.png";
+import AlianzaRecreo from "../../assets/shield/alianzarecreo.png";
 
-const arrShield = [
-  {
-    shield: Chilenitos,
-    name: "Chilenitos",
-  },
+export const arrShield = [
   {
     shield: Orompello,
     name: "Orompello",
   },
   {
-    shield: Berlin,
+    shield: SanPedro,
+    name: "San Pedro",
+  },
+  {
+    shield: SanFrancisco,
+    name: "San Francisco",
+  },
+  {
+    shield: DeportesRecreo,
+    name: "Deportes Recreo",
+  },
+  {
+    shield: Chilenitos,
+    name: "Chilenitos",
+  },
+  {
+    shield: LosPlaceres,
+    name: "Los Placeres",
+  },
+  {
+    shield: VillaBerlin,
     name: "Villa Berlín",
   },
   {
-    shield: Chilenitos,
-    name: "Chilenitos",
+    shield: America,
+    name: "América",
   },
   {
-    shield: Orompello,
-    name: "Orompello",
-  },
-  {
-    shield: Berlin,
-    name: "Villa Berlín",
-  },
-  {
-    shield: Chilenitos,
-    name: "Chilenitos",
-  },
-  {
-    shield: Orompello,
-    name: "Orompello",
+    shield: AlianzaRecreo,
+    name: "Alianza Recreo",
   }
 ];
 
