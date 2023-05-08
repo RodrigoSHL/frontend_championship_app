@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+}
+
+.paper_container {
+    padding: 20px;
+}
+
+.title {
+    margin-top: 10px;
+}
+.subtitle {
+    margin-bottom: 30px;
+}
+.body_text {
+    margin-bottom: 20px;
+}

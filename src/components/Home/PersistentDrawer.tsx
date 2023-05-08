@@ -133,6 +133,11 @@ export default function PersistentDrawerLeft() {
       onClick: () => navigate("/home"),
     },
     {
+      text: "QUIÉNES SOMOS",
+      icon: <InboxIcon />,
+      onClick: () => navigate("/us"),
+    },
+    {
       text: "TABLA DE GOLEADORES",
       icon: <InboxIcon />,
       onClick: () => navigate("/scorers"),
