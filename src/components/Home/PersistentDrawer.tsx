@@ -134,9 +134,24 @@ export default function PersistentDrawerLeft() {
       onClick: () => navigate("/home"),
     },
     {
-      text: "QUIÉNES SOMOS",
+      text: "QUIENES SOMOS",
       icon: <InboxIcon />,
       onClick: () => navigate("/us"),
+    },
+    {
+      text: "RESULTADOS",
+      icon: <InboxIcon />,
+      onClick: () => navigate("/results"),
+    },
+    {
+      text: "FIXTURE",
+      icon: <InboxIcon />,
+      onClick: () => navigate("/fixture"),
+    },
+    {
+      text: "TABLA DE POSICIONES",
+      icon: <InboxIcon />,
+      onClick: () => navigate("/positionsTable"),
     },
     {
       text: "TABLA DE GOLEADORES",
