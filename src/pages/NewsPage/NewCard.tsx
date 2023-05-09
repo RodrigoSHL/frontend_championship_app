@@ -12,7 +12,7 @@ interface Props {
 }
 export default function NewCard({news}: Props) {
   return (
-    <Card sx={{ maxWidth: 345, margin:2 }}>
+    <Card sx={{ maxWidth: 345, margin:2, backgroundColor: '#f2f2f2' }}>
       <CardMedia
         sx={{ height: 140 }}
         title="green iguana"

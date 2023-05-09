@@ -25,7 +25,7 @@ const UsPage = () => {
         </Typography>
       </Grid>
 
-      <Paper className={styles.paper_container}>
+      <Paper sx={{backgroundColor: "#f2f2f2"}} className={styles.paper_container}>
         <Typography align="center" variant="h6" sx={{ marginBottom: 2 }}>
           Fundación y primeros años
         </Typography>
@@ -38,7 +38,7 @@ const UsPage = () => {
         ))}
       </Paper>
 
-      <Paper className={styles.paper_container} sx={{ marginY: 4 }}>
+      <Paper className={styles.paper_container} sx={{ marginY: 4, backgroundColor: '#f2f2f2' }}>
         <Typography align="center" variant="h6" sx={{ marginBottom: 2 }}>
           Liga de Valparaíso
         </Typography>
