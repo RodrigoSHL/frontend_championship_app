@@ -14,6 +14,8 @@ import IndexNewsPage from "../pages/NewsPage/Index";
 import IndexContactPage from "../pages/ContactPage/Index";
 import IndexMediaPage from "../pages/MediaPage/Index";
 import IndexUsPage from "../pages/UsPage/Index";
+import IndexResultsPage from "../pages/ResultsPage/Index";
+import IndexFixturePage from "../pages/FixturePage/Index";
 
 const Navigation = () => {
   const { status, checkAuthToken } = useAuthStore();
@@ -34,6 +36,8 @@ const Navigation = () => {
           <>
             <Route path="/home" element={<IndexHomePage />} />
             <Route path="/us" element={<IndexUsPage />} />
+            <Route path="/results" element={<IndexResultsPage />} />
+            <Route path="/fixture" element={<IndexFixturePage />} />
             <Route path="/scorers" element={<ScorersTablePage />} />
             <Route path="/media" element={<IndexMediaPage />} />
             <Route path="/news" element={<IndexNewsPage />} />

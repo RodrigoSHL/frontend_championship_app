@@ -1,9 +1,15 @@
-import React from 'react'
+import { Container } from "@mui/material";
+import React from "react";
+import ResultsPage from "./ResultsPage";
 
 const IndexResultsPage = () => {
   return (
-    <div>IndexResultsPage</div>
-  )
-}
+    <>
+      <Container maxWidth="xl">
+        <ResultsPage/>
+      </Container>
+    </>
+  );
+};
 
-export default IndexResultsPage
+export default IndexResultsPage;
