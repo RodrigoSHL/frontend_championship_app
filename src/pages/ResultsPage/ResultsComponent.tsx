@@ -35,7 +35,7 @@ const ResultsComponent = ({ championshipDate, results }: Props) => {
           <Box sx={{ padding: 2, backgroundColor: "blue" }}>
             <Typography align="center" color="white" variant="subtitle1">
               {result.category.toUpperCase()}
-            </Typography>{" "}
+            </Typography>
             <Box className={styles.container_results}>
               <Box>
                 <img

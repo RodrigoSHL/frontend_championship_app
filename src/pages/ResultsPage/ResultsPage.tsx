@@ -64,6 +64,52 @@ const championshipDate = [
       },
     ],
   },
+  {
+    championshipDate: "3",
+    dateCreation: "23-23-2023",
+    results: [
+      {
+        category: "senior",
+        localTeam: Orompello,
+        visitTeam: VillaBerlin,
+        localTeamScore: 1,
+        visitTeamScore: 1,
+        dateGame: "23-23-2023",
+      },
+      {
+        category: "senior",
+        localTeam: Orompello,
+        visitTeam: VillaBerlin,
+        localTeamScore: 1,
+        visitTeamScore: 1,
+        dateGame: "23-23-2023",
+      },
+      {
+        category: "senior",
+        localTeam: Orompello,
+        visitTeam: VillaBerlin,
+        localTeamScore: 1,
+        visitTeamScore: 1,
+        dateGame: "23-23-2023",
+      },
+      {
+        category: "senior",
+        localTeam: Orompello,
+        visitTeam: VillaBerlin,
+        localTeamScore: 1,
+        visitTeamScore: 1,
+        dateGame: "23-23-2023",
+      },
+      {
+        category: "senior",
+        localTeam: Orompello,
+        visitTeam: VillaBerlin,
+        localTeamScore: 1,
+        visitTeamScore: 1,
+        dateGame: "23-23-2023",
+      },
+    ],
+  },
 ];
 
 const ResultsPage = () => {
