@@ -1,9 +1,15 @@
-import React from 'react'
+import { Container } from "@mui/material";
+import React from "react";
+import FixturePage from "./FixturePage";
 
 const IndexFixturePage = () => {
   return (
-    <div>IndexFixturePage</div>
-  )
-}
+    <>
+      <Container maxWidth="xl">
+        <FixturePage />
+      </Container>
+    </>
+  );
+};
 
-export default IndexFixturePage
+export default IndexFixturePage;

@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
 import styles from "./ResultPage.module.css";
 
@@ -11,8 +11,8 @@ interface Results {
   category: string;
   localTeam: Team;
   visitTeam: Team;
-  localTeamScore: number;
-  visitTeamScore: number;
+  localTeamScore?: number;
+  visitTeamScore?: number;
   dateGame: string;
 }
 
@@ -26,13 +26,13 @@ const ResultsComponent = ({ championshipDate, results }: Props) => {
     <>
       <Grid item xs={12} sx={{ padding: 2 }}>
         <Typography align="center" variant="h5">
-          {"Fecha"} - {championshipDate}
+          {"FECHA"} - {championshipDate}
         </Typography>
         <br />
       </Grid>
       {results.map((result, key) => (
         <Grid key={key} item xs={12} md={6} lg={3} sx={{ padding: 2 }}>
-          <Box sx={{ padding: 2, backgroundColor: "blue" }}>
+          <Paper sx={{ padding: 2, backgroundColor: "#003366" }}>
             <Typography align="center" color="white" variant="subtitle1">
               {result.category.toUpperCase()}
             </Typography>
@@ -47,8 +47,8 @@ const ResultsComponent = ({ championshipDate, results }: Props) => {
                   {result.localTeam.name}
                 </Typography>
               </Box>
-              <Box>
-                <Typography align="center" color="white" variant="subtitle1">
+              <Box sx={{marginTop:2}}>
+                <Typography align="center" color="white" variant="h5">
                   {result.localTeamScore} - {result.visitTeamScore}
                 </Typography>
               </Box>
@@ -63,7 +63,7 @@ const ResultsComponent = ({ championshipDate, results }: Props) => {
                 </Typography>
               </Box>{" "}
             </Box>
-          </Box>
+          </Paper>
         </Grid>
       ))}
     </>
