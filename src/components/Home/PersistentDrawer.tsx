@@ -23,6 +23,10 @@ import { useAuthStore } from "../../hooks/useAuthStore";
 import Footer from "../Footer/Footer";
 import NestedList from "./NestedList";
 import { ListSubheader } from "@mui/material";
+import styles from "./Home.module.css";
+import CircleOptions from "./CircleOptions";
+import ToggleSwitch from "./ToggleSwitch";
+import logo from '../../assets/logof.png';
 
 const drawerWidth = 350;
 
@@ -190,13 +194,24 @@ export default function PersistentDrawerLeft() {
             aria-label="open drawer"
             onClick={handleDrawerOpen}
             edge="start"
-            sx={{ mr: 2, ...(open && { display: "none" }) }}
+            sx={{
+              marginRight: 5,
+              ...(open && { display: "none" }),
+            }}
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            Persistent drawer
+          <img src={logo} alt="logo" className={styles.logo} />
+          <Typography
+            variant="h6"
+            noWrap
+            component="div"
+            sx={{ flexGrow: 1, marginLeft: 1 }}
+          >
+            Asociación de Fútbol de Valparíso
           </Typography>
+          <ToggleSwitch />
+          <CircleOptions />
         </Toolbar>
       </AppBar>
       <Drawer
