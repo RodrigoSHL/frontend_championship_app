@@ -3,20 +3,20 @@ import { Container } from "@mui/material";
 import TeamPage from "./TeamPage";
 import { images } from "../NewsPage/NewsPage";
 
-interface Contact {
+export interface Contact {
   address: string;
   email: string;
   phone: string;
   social: string;
 }
 
-interface Management {
+export interface Management {
   id: string;
   name: string;
   position: string;
 }
 
-interface GalleryImage {
+export interface GalleryImage {
   id: number;
   src: string;
 }
