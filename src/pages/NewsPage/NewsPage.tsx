@@ -2,7 +2,7 @@ import { Container, Grid, Typography, Paper } from "@mui/material";
 import { ImageGallery } from "./ImageGallery";
 import styles from "./NewsPage.module.css";
 
-const images = [
+export const images = [
   {
     id: 1,
     src: "https://picsum.photos/id/1018/400/400",

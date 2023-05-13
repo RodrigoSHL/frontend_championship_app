@@ -1,9 +1,9 @@
 import { Container, Grid, Typography } from "@mui/material";
 import NewCard from "./NewCard";
 import styles from "./NewsPage.module.css";
-import { News } from "../../interfaces/INews.interface";
+import { Image, News } from "../../interfaces/INews.interface";
 
-const images = [
+export const images = [
   {
     id: 1,
     src: "https://picsum.photos/id/1018/400/400",

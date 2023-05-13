@@ -173,6 +173,11 @@ export default function PersistentDrawerLeft() {
       icon: <InboxIcon />,
       onClick: () => navigate("/contact"),
     },
+    {
+      text: "EQUIPO",
+      icon: <InboxIcon />,
+      onClick: () => navigate("/teams"),
+    },
   ];
 
   return (

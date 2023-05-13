@@ -16,6 +16,7 @@ import IndexMediaPage from "../pages/MediaPage/Index";
 import IndexUsPage from "../pages/UsPage/Index";
 import IndexResultsPage from "../pages/ResultsPage/Index";
 import IndexFixturePage from "../pages/FixturePage/Index";
+import IndexTeamPage from "../pages/TeamPage/Index";
 
 const Navigation = () => {
   const { status, checkAuthToken } = useAuthStore();
@@ -42,6 +43,7 @@ const Navigation = () => {
             <Route path="/media" element={<IndexMediaPage />} />
             <Route path="/news" element={<IndexNewsPage />} />
             <Route path="/contact" element={<IndexContactPage />} />
+            <Route path="/teams" element={<IndexTeamPage />} />
 
             <Route path="/calendar" element={<CalendarPublic />} />
             <Route path="/calendar/:id" element={<CalendarPublic />} />
