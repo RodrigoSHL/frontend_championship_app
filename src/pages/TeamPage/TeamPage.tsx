@@ -1,8 +1,10 @@
 import {
+  Avatar,
   Box,
   Grid,
   List,
   ListItem,
+  ListItemAvatar,
   ListItemButton,
   ListItemIcon,
   ListItemText,
@@ -12,6 +14,7 @@ import {
 import React from "react";
 import { Team } from "./Index";
 import InboxIcon from "@mui/icons-material/Inbox";
+import PersonIcon from "@mui/icons-material/Person";
 
 interface Props {
   team: Team;
@@ -29,7 +32,7 @@ const TeamPage = ({ team }: Props) => {
         <Grid
           item
           xs={12}
-          md={6}
+          md={7}
           sx={{ display: "flex", flexDirection: "column" }}
         >
           <Paper sx={{ padding: 2, my: 3 }}>
@@ -88,25 +91,35 @@ const TeamPage = ({ team }: Props) => {
             ))}
           </Box>
         </Grid>
-        <Grid item xs={12} md={6}>
-          <Paper sx={{ padding: 2, my: 3, ml: 2 }}>
+        <Grid
+          item
+          xs={12}
+          md={5}
+          sx={{ display: "flex", justifyContent: 'center' }}
+        >
+          <Paper sx={{ padding: 2, my: 3, ml: 2, width: 'auto' }}>
             <Box>
               <Typography align="justify" variant="h6">
                 {"Dirigentes del Club " + `(${new Date().getFullYear()})`}
               </Typography>
-              {team.management.map((person, index) => (
-                <Box
-                  key={index}
-                  sx={{ backgroundColor: "lightcoral", width: 'auto'}}
-                >
-                  <Typography align="center" variant="h6">
-                    {person.name}
-                  </Typography>
-                  <Typography align="center" variant="h6">
-                  {person.position}
-                  </Typography>
-                </Box>
-              ))}
+              <List
+                sx={{
+                  width: "100%",
+                  maxWidth: 360,
+                  bgcolor: "background.paper",
+                }}
+              >
+                {team.management.map((person, index) => (
+                  <ListItem key={index}>
+                    <ListItemAvatar>
+                      <Avatar>
+                        <PersonIcon />
+                      </Avatar>
+                    </ListItemAvatar>
+                    <ListItemText primary={person.name} secondary={person.position} />
+                  </ListItem>
+                ))}
+              </List>
             </Box>
           </Paper>
         </Grid>
