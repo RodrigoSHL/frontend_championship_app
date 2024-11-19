@@ -26,7 +26,7 @@ import { ListSubheader } from "@mui/material";
 import styles from "./Home.module.css";
 import CircleOptions from "./CircleOptions";
 import ToggleSwitch from "./ToggleSwitch";
-import logo from '../../assets/logof.png';
+import logo from '../../assets/logo.webp';
 
 const drawerWidth = 350;
 
@@ -211,7 +211,7 @@ export default function PersistentDrawerLeft() {
             component="div"
             sx={{ flexGrow: 1, marginLeft: 1 }}
           >
-            Asociación de Fútbol de Valparíso
+            Soccer Association
           </Typography>
           <ToggleSwitch />
           <CircleOptions />

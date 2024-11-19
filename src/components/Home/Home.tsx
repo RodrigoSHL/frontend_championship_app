@@ -17,8 +17,6 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import ToggleSwitch from "./ToggleSwitch";
 import Navigation from "../../routes/Navigation";
-import { useNavigate } from "react-router-dom";
-import AdbIcon from "@mui/icons-material/Adb";
 import CircleOptions from "./CircleOptions";
 import AvTimerIcon from "@mui/icons-material/AvTimer";
 import CatchingPokemonIcon from "@mui/icons-material/CatchingPokemon";
@@ -27,7 +25,8 @@ import AppsIcon from "@mui/icons-material/Apps";
 import CalendarIcon from "@mui/icons-material/CalendarMonth";
 import Snackbar from "../Middleware/Snackbar";
 import { useAuthStore } from "../../hooks/useAuthStore";
-import logo from '../../assets/logof.png';
+import { useNavigate } from "react-router-dom";
+import logo from '../../assets/logo.webp';
 import styles from "./Home.module.css";
 
 const drawerWidth = 350;
@@ -194,7 +193,7 @@ export default function MiniDrawer() {
             component="div"
             sx={{ flexGrow: 1, marginLeft: 1 }}
           >
-            Asociación de Fútbol de Valparíso
+            Soccer Association
           </Typography>
           <ToggleSwitch />
           <CircleOptions />
